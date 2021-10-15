@@ -1,0 +1,48 @@
+s (41 sloc)  1.58 KB
+   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+<script src="https://ajak.googleapis.com/ajak/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="business-card middle">
+            <div class="front">
+            <h2>John Doe</h2>
+            <span>Web Designer</span>
+
+            <ul class="contact-info">
+                <li>
+                <i class="fas fa-mobile-alt"></i>+01725999400
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>mamun@gmail.com
+                </li>
+                <li>
+                    <i class="fas fa-map-marked"></i>New Dhaka Bangladesh
+                </li>
+            </ul>    
+            
+            </div>
+            <div class="back">
+                <span>Webbgra</span>
+            </div>
+            
+        </div>
+
+        <script>
+            $(".business-card").click(function(){
+              $(".business-card").toggleClass("business-card-active");  
+            });
+        </script>
+
+    </body>
+    </html>
